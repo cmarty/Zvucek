@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>sounds/A1_440Hz.wav</file>
+        <file>sounds/A2_880Hz.wav</file>
+        <file>sounds/B1_494Hz.wav</file>
+        <file>sounds/B2_988Hz.wav</file>
+        <file>sounds/C1_262Hz.wav</file>
+        <file>sounds/C2_523Hz.wav</file>
+        <file>sounds/D1_294Hz.wav</file>
+        <file>sounds/D2_587Hz.wav</file>
+        <file>sounds/E1_330Hz.wav</file>
+        <file>sounds/E2_659Hz.wav</file>
+        <file>sounds/F1_349Hz.wav</file>
+        <file>sounds/F2_698Hz.wav</file>
+        <file>sounds/G1_392Hz.wav</file>
+        <file>sounds/G2_784Hz.wav</file>
+        <file>images/white/more_vert.png</file>
+        <file>images/white/more_vert@2x.png</file>
+        <file>images/white/more_vert@3x.png</file>
+        <file>images/white/more_vert@4x.png</file>
+    </qresource>
+</RCC>

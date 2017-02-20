@@ -22,6 +22,7 @@ import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.0
 import QtQuick.Controls.Material 2.0
 import QtMultimedia 5.7
+import Qt.labs.settings 1.0
 
 ApplicationWindow {
     id: appWindow
@@ -42,6 +43,15 @@ ApplicationWindow {
     property int fontSizeBodyAndButton: 14 // is Default
     property int fontSizeCaption: 12
 
+    Settings {
+        id: settings
+        property alias toneName: toneText.text
+        property string toneSource: playSound.source
+
+        Component.onCompleted: {
+            playSound.source = toneSource
+        }
+    }
 
     header: ToolBar {
         id: toolbar
@@ -89,7 +99,7 @@ ApplicationWindow {
         //anchors.horizontalCenter: parent
         anchors.left: parent.left
         anchors.right: parent.right
-        Button {
+        Button {            
             //anchors.horizontalCenter: parent.
             //anchors.centerIn: parent
             Layout.alignment: Qt.AlignHCenter
@@ -196,7 +206,7 @@ ApplicationWindow {
             }
             Label {
                 width: aboutDialog.availableWidth
-                text: "Zdrojový kod aplikace je možno stáhnout na adrese <a href=\"https://www.gnu.org/licenses/gpl-3.0-standalone.html\">GPL v3.0</a>"
+                text: "Zdrojový kod aplikace je možno stáhnout na adrese <a href=\"https://github.com/cmarty/Zvucek\">https://github.com/cmarty/Zvucek</a>"
                 onLinkActivated: Qt.openUrlExternally(link)
                 wrapMode: Label.Wrap
                 font.pixelSize: fontSizeCaption
@@ -211,7 +221,7 @@ ApplicationWindow {
 
             Label {
                 width: aboutDialog.availableWidth
-                text: "Zdrojové kody Qt knihovny se dájí stáhnout na adrese <a href=\"http://www.qt.io/download-open-source/\">http://qt.io/download-open-source/</a>"
+                text: "Zdrojové kody Qt knihovny je možno stáhnout na adrese <a href=\"http://www.qt.io/download-open-source/\">http://qt.io/download-open-source/</a>"
                 wrapMode: Label.Wrap
                 font.pixelSize: fontSizeCaption
             }

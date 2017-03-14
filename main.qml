@@ -29,7 +29,7 @@ ApplicationWindow {
     visible: true
     width: 410
     height: 680
-    title: "Zvuček"
+    title: "Bzučák"
     property bool isLandscape: width > height
     //Material.theme : Material.Dark
     // font sizes - defaults from Google Material Design Guide
@@ -60,7 +60,7 @@ ApplicationWindow {
             Label {
                 //Layout.fillWidth: true
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: "Zvuček"
+                text: "Bzučák"
                 //horizontalAlignment: Qt.AlignHCenter
                 //verticalAlignment: Qt.AlignVCenter
                 font.pixelSize: fontSizeTitle
@@ -177,7 +177,7 @@ ApplicationWindow {
 
             Label {
                 width: aboutDialog.availableWidth
-                text: "O aplikaci Zvuček"
+                text: "O aplikaci Bzučák"
                 font.bold: true
                 font.pixelSize: fontSizeTitle
             }

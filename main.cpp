@@ -21,8 +21,8 @@
 
 int main(int argc, char *argv[])
 {
-    QGuiApplication::setApplicationName("Zvucek");
-    QGuiApplication::setOrganizationName("Zvucek");
+    QGuiApplication::setApplicationName("Bzucak");
+    QGuiApplication::setOrganizationName("DrchlikSoft");
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QGuiApplication app(argc, argv);
 
